@@ -27,7 +27,7 @@
                 pushToken: pushTokenObj.pushToken
             } 
           }
-        return dynamoDb.put(params).promise().then(response => 201);
+        return dynamoDb.put(params).promise().then(response => 201).catch(err => console.log(err));
     }
     module.exports = service;
 }(module, require));
