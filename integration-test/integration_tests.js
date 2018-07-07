@@ -1,3 +1,9 @@
+/**
+ * This test uses real AWS resources.
+ * It needs the lambda function to be deployed
+ * 
+ * Match the AWS key, secret and region with the deployed values
+ */
 var test = require('tape');  
 var lambdaLocal = require('lambda-local');  
 var winston = require('winston');
